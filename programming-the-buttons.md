@@ -51,10 +51,11 @@ while not game_over:
     sleep(0.1)
 ```
 
-This code waits a small amount of time as long as the game is not over \(meaning a button has not been pressed\). The`button_pressed`function is called by the GPIO library whenever a button is pressed, and you can imagine it as running at the same time as the loop above. The loop periodically checks if the `button_pressed` function has changed the value of `game_over` to indicate that the program should end. The small sleep time allows other code, such as the `button_pressed` function, or programs on the Raspberry Pi to run while your code waits for `game_over` to change.
+This code waits a small amount of time as long as the game is not over \(meaning a button has not been pressed\). The`button_pressed`function is called by the GPIO library whenever a button is pressed, and you can imagine it as running at the same time as the loop above. The loop periodically checks if the `button_pressed` function has changed the value of `game_over` to indicate that the program should end. The small sleep time allows other code, such as the `button_pressed` function or other programs on the Raspberry Pi, to run while your code waits for `game_over` to change.
 
 ## Testing
 
 Before going further, make sure that your button code is working. Run your program and push each button when the LED turns off. Make sure that the correct player is printed when you push the button.
 
 If the buttons don't do what you expect them to, there may be a problem in your circuit or code. Identify and fix any problems, then run your program again to check if the problem has been fixed.
+

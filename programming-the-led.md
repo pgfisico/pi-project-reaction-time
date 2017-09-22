@@ -38,10 +38,11 @@ The `uniform` function can be used to generate a random floating point number. T
 >
 > The end-point value `b` may or may not be included in the range depending on floating-point rounding in the equation `a + (b-a) * random().`
 
-Replace the five second time you added above with a random time by using the return value of the `uniform` function. You will need to pick appropriate values of `a` and `b` to set the maximum and minimum delay.
+Replace the five second time you added above with a random time by using the return value of the `uniform` function. You will need to choose values of `a` and `b` to set the maximum and minimum delay for your game.
 
 ## Testing
 
-Before going further, make sure that your LED code is working. Run your program several times and check that the LED turns off and then on after a random amount of time.
+Before going further, make sure that your LED code is working. Run your program several times and check that the LED turns on and then off after a random amount of time. The time it takes the LED to turn off should be different each time your program runs \(although you might not be able to see a different time depending on the minimum and maximum delay you chose\).
 
 If the LED doesn't do what you expect it to, there may be a problem in your circuit or code. Identify and fix any problems, then run your program again to check if the problem has been fixed.
+
