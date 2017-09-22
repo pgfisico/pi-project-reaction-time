@@ -2,7 +2,7 @@
 
 ## Setup
 
-First create a new Python script named `reaction_time.py`.
+Create a new Python script named `reaction_time.py`.
 
 At the top of the file, import `LED` from the GPIO module. Setup your LED with the pin number that you connected it to when building your circuit.
 
