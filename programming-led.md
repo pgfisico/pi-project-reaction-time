@@ -9,7 +9,7 @@ At the top of the file, import `LED` from the GPIO module. Setup your LED with t
 ```py
 from gpiozero import LED
 
-led = LED(0) # Change the pin number to match your circuit
+led = LED(-1) # Change the pin number to match your circuit
 ```
 
 At the end of the file, write code which turns the LED on, waits five seconds, and then turns the LED off.
@@ -30,7 +30,7 @@ In order to make the LED turn off randomly, so players can't be prepared to push
 from random import uniform
 ```
 
-The `uniform` function can be used to generate a random floating point number. The random module's documentation provides the following description of `uniform`.
+The `uniform` function can be used to generate a random floating point number (i.e. a decimal instead of an integer). The random module's documentation provides the following description of `uniform`.
 
 > `random.uniform(a, b)`
 >
@@ -42,7 +42,7 @@ Replace the five second time you added above with a random time by using the ret
 
 ## Testing
 
-Before going further, make sure that your LED code is working. Run your program several times and check that the LED turns on and then off after a random amount of time. The time it takes the LED to turn off should be different each time your program runs \(although you might not be able to see a different time depending on the minimum and maximum delay you chose\).
+Before going further, make sure that your LED code is working. Run your program several times and check that the LED turns on and then off after a random amount of time. The time it takes until the LED turns off should be different each time your program runs, although you might not be able to see a difference between the times depending on how close the minimum and maximum delay you chose are.
 
 If the LED doesn't do what you expect it to, there may be a problem in your circuit or code. Identify and fix any problems, then run your program again to check if the problem has been fixed.
 

@@ -14,11 +14,11 @@ from time import perf_counter, sleep
 
 Above the `button_pressed` function and below where you setup the LED and buttons, add a variable named `start_time` and set it's value to zero.
 
-Immediately before turning off the LED, store the return value of the `perf_counter` function in `start_time`.
+Immediately before your program turns off the LED, store the return value of the `perf_counter` function in `start_time`.
 
 ## Calculating Reaction Time
 
-At the beginning of the `button_pressed` function, add a variable named `end_time` and assign it the return value of the `perf_counter` function. This should be the first line in the `button_pressed` function so that you stop timing as soon as possible, and are not including the time your code takes to run in the reaction time.
+In the `button_pressed` function, and add a variable named `end_time` and assign it the return value of the `perf_counter` function. This line should come as early as possible in the function so that you stop timing as soon as possible, and are not including the time your code takes to run in the reaction time.
 
 Update the `button_pressed` function to calculate the reaction time of the winning player using `start_time` and `end_time`, and print out the calculated reaction time for the winning player.
 
